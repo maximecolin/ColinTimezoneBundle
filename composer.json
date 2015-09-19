@@ -1,0 +1,28 @@
+{
+    "name": "maximecolin/timezone-bundle",
+    "type": "symfony-bundle",
+    "description": "Manager date timezone in Twig and Forms",
+    "keywords": ["date", "timezone", "symfony", "bundle"],
+    "homepage": "https://github.com/maximecolin/ColinTimezoneBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxime Colin",
+            "homepage": "https://github.com/maximecolin"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "symfony/form": "~2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Colin\\Bundle\\TimezoneBundle\\": "."
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
