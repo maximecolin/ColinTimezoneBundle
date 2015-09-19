@@ -8,5 +8,9 @@
         <service id="colin_timezone.detector.chain" class="Colin\Bundle\TimezoneBundle\Timezone\ChainDetector">
             <argument />
         </service>
+        <service id="colin_timezone.event_listener.request" class="Colin\Bundle\TimezoneBundle\EventListener\RequestListener">
+            <argument type="service" id="twig" />
+            <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" />
+        </service>
     </services>
 </container>
